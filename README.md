@@ -1,4 +1,4 @@
-## opam-switches -- manipulate opam switches in parallel
+# opam-switches -- manipulate opam switches in parallel
 
 This is a simple plugin to create multiple opam switches in 
 parallel.  It will likely be unnecessary once opam 2 gains
