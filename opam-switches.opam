@@ -1,0 +1,8 @@
+opam-version: "2.0"
+maintainer: "Anil Madhavapeddy <anil@recoil.org>"
+authors: ["Anil Madhavapeddy <anil@recoil.org>"]
+homepage: "https://github.com/avsm/opam-switches"
+license: "ISC"
+dev-repo: "git://github.com/avsm/opam-switches.git"
+bug-reports: "https://github.com/avsm/ocaml-switches/issues"
+tags: "flags:plugin"

@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+create() {
+  dir=""
+  if [ -d "$1" ]; then
+    dir="$1"
+    shift
+  fi
+
+  for switch in $*; do
+    s=(${switch//:/ })
+    echo opam switch create $dir ${s[0]} ${s[1]} 
+    opam switch create $dir ${s[0]} ${s[1]} &
+    sleep 3
+  done
+
+  wait
+}
+
+cmd=$1
+shift
+
+case $cmd in
+create)
+  create $*;
+  ;;
+*)
+  echo Unsupported switches command: $cmd
+  exit 1
+esac
